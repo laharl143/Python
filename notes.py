@@ -92,4 +92,18 @@ Type Function:  #this is used to know the type of any variable
 
 
 
+HOW TO NAME VARIABLES:
+    
+-lower case
+-separate with underscore(_)
+
+example:
+    first_number   (good example)
+    second_number  (good example)
+    
+    FirstNumber    (bad example) #camel case is used in javascript
+    
+    
+
+
 
