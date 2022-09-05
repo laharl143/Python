@@ -79,3 +79,17 @@ Description:
     N/A
 
 
+
+###################Variables:
+
+>>> number = 1  #this is used to store value to variable
+
+
+Type Function:  #this is used to know the type of any variable
+    
+>>> type(number)
+<class 'int'>
+
+
+
+
