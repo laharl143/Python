@@ -1,6 +1,9 @@
 from distutils.log import info
 from doctest import script_from_examples
 from msilib.schema import File
+from re import A
+from sqlite3 import OperationalError
+from tkinter import BOTH
 
 
 Open IDLE 
@@ -105,5 +108,38 @@ example:
     
     
 
+2 DIFFERENT TYPE OF NUMBERS IN PYTHON:
+    
+>>> type(2)
+<class 'int'>  #integer
+
+>>> type(0.5)
+<class 'float'> #float
 
 
+rare type:
+    
+>>> 5 % 3   #modulo gives the remainder
+2
+
+>>> 10 % 2   
+0
+
+
+
+ORDERING OPERATIONS:
+    
+B Brackets
+O Order     #^ ,square root, etc
+D Division
+M Multiplication
+A Addition
+S Subtraction
+
+
+
+
+
+Writing Variables:
+    
+!!!It's Important to right variables in python with no spaces.!!!
