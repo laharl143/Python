@@ -1,5 +1,6 @@
 from distutils.log import info
 from doctest import script_from_examples
+import math
 from msilib.schema import File
 from re import A
 from sqlite3 import OperationalError
@@ -143,3 +144,52 @@ S Subtraction
 Writing Variables:
     
 !!!It's Important to right variables in python with no spaces.!!!
+
+
+
+
+
+Math Module:   (import math)
+
+>>>round(2.1)
+2
+>>>round(1.5)
+2
+>>>math.floor(1.5)
+1
+>>>math.ceil(2.1)
+3
+
+>>>math.pi(2.1)
+3.141592653589793
+>>>math.e(2.1)
+2.718281828459045
+
+>>>math.sin(math.pi / 2)
+1.0
+>>>math.sin(math.pi)
+1.2246467991473532e-16
+>>>math.floor(math.sin(math.pi))
+0
+>>>math.cos(0)
+1.0
+>>>math.asin(0)    #inverse function of sine
+0.0
+>>>math.acos(0)    #inverse function of cosine
+1.5707963267948966
+
+>>>math.hypot(3,4) #get hypotenuse with (a,b)
+5.0 
+
+>>>math.pow(2,3)  #2 to the power of 3
+8.0
+>>>2 ** 3   #2 to the power of 3
+8
+
+>>>math.exp(2)  #E^2
+7.38905609893065
+
+>>>math.log(math.e)
+1.0
+>>>math.log10(1000)  #10^3 = 1000 ; logarithmic
+3
