@@ -12,12 +12,11 @@ hobby = input("What do you enjoy the most?: ")
 
 
 #Create output text
+string = "Hi {}! So, you are {} years old? Great job levelling up! So, you live in {}? That's a great place to live! Oh you love {} too? Me too!"
+output = string.format(name,age,city,hobby) 
 
-string = "Hi {}! So, you are {} years old? Great job levelling up! So, you live in {}? That's a great place to live! Oh you love {} too? Me too!".format(name,age,city,hobby) 
-
-print(string)
 
 #Print output to screen
-
+print(output) 
 
 
