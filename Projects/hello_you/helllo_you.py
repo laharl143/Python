@@ -1,13 +1,11 @@
 #Ask user for name
 name = input("What is your name?: ")
 
-
 #Ask user for their age
 age = input("What is your age?: ")
 
-
 #Ask user for city
-city = input("Where do you live?: ")
+city = input("What city do you live in?: ")
 
 #Ask user what they enjoy
 hobby = input("What do you enjoy the most?: ")

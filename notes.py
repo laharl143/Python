@@ -193,3 +193,14 @@ Math Module:   (import math)
 1.0
 >>>math.log10(1000)  #10^3 = 1000 ; logarithmic
 3
+
+
+
+>>> A = "part one"
+>>> B = "part two"
+>>> A + B
+"part onepart two"
+
+>>> A * 3
+"part onepart onepart one"
+>>> 
