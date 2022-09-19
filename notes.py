@@ -195,6 +195,7 @@ Math Module:   (import math)
 3
 
 
+##Adding or multiplying strings
 
 >>> A = "part one"
 >>> B = "part two"
@@ -203,4 +204,25 @@ Math Module:   (import math)
 
 >>> A * 3
 "part onepart onepart one"
->>> 
+>>> "=" * 20
+"===================="
+
+
+##Adding string and integer
+
+>>> A = "part"
+>>> B = 1
+>>> A + B
+TypeError: Can't convert 'int' object to str implicitly
+
+#This is the fix
+>>> A + str(B)   #you need to convert the int to str first
+'part1'
+
+##Python format function
+>>>"{} - {}".format(A,B)   #this is used to put variables to a placeholder
+'part - 1'
+>>>"{1} - {0}".format(A,B) #this is used to reverse their position
+'1 - part'
+
+
