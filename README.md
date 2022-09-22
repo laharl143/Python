@@ -5,6 +5,6 @@
   <li>Data Structures & Algorithms - Python</li>
   <li>Python 3: Deep Dive (Part 1 - Functional)</li>
   <li>Python 3: Deep Dive (Part 2 - Iteration, Generators)</li>
-  <li>Python 3: Deep Dive (Part 3 - Hash Maps)/li>
-  <li>Python 3: Deep Dive (Part 4 - OOP)/li>
+  <li>Python 3: Deep Dive (Part 3 - Hash Maps)</li>
+  <li>Python 3: Deep Dive (Part 4 - OOP)</li>
 </ul>
