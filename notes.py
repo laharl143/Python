@@ -2,7 +2,7 @@ from distutils.log import info
 from doctest import script_from_examples
 import math
 from msilib.schema import File
-from re import A
+from re import A, X
 from sqlite3 import OperationalError
 from tkinter import BOTH
 
@@ -226,9 +226,10 @@ TypeError: Can't convert 'int' object to str implicitly
 '1 - part'
 
 
-#String methods:
+#String methods:    #important note: strings are immutable; 
 >>> string.method()
 
+# .count()
 >>> text = "happy birthday"
 >>> text.count("a")    #this counts how many letter "a" in the string
 2
@@ -236,10 +237,11 @@ TypeError: Can't convert 'int' object to str implicitly
 >>> text.count("day")
 1
 
+# .lower(), .upper(), .capitalize(), .title()
 >>> x = "Happy Birthday"
 >>> x.lower()           #this makes the string all lower case
 "happy birthday"
->>> x.lower()           #this makes the string all upper case
+>>> x.upper()           #this makes the string all upper case
 "HAPPY BIRTHDAY"
 >>> x                   #if you call again the string, it will go back to its original
 "Happy Birthday"
@@ -253,11 +255,22 @@ TypeError: Can't convert 'int' object to str implicitly
 >>> x.title()           #title method() is used to capitalize the first letter of each word in a sentence
 "Happy Birthday"
 
+# .islower(), .isupper(), x.istitle() 
 >>> x.islower()         # .is<method>() is used to check the current case the x is
 False
 >>> x.isupper()  
 False
 >>> x.istitle()         #here its True, so the x is currently a title case
 True
+
+# .index(), .find(), .strip()
+>>> x = "happy birthday"
+>>> x.index("birthday")     #this counts the first letter of "birthday"; 0=H, 1=A, 2=P, 3=P, 4=Y, 5=*space* 6=Birthday
+6 
+>>> x.find("birthday")
+6
+>>> y = "0000000000000happybirthday00000000000000"
+>>> y.strip("0")            #this is used to strip out the "0" in the string
+"happybirthday"
 
 
