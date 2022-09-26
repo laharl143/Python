@@ -18,3 +18,7 @@ output = string.format(start,age,end)
 
 # Finally, print the output to the screen using the print() function.
 print(output)
+
+
+#output
+#I am 26 years old

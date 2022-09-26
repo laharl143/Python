@@ -11,3 +11,6 @@ output = string.format(name,age)
 
 # Finally, use the print() function to print the output.
 print(output)
+
+#output
+#My name is Erskine Gamaliel L. Duenas and I am 26 years old.
