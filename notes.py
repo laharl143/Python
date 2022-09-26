@@ -278,3 +278,28 @@ True
 "0000000000000happybirthday"
 >>> y.strip()               #if you use strip without input, it will only strip the spaces
 "happybirthday"
+
+
+#Slice
+
+>>> word = "supercalifragilisticexpialidocious" 
+>>> word[0]     #count start at 0
+'s'
+>>> word[2]
+'p'
+>>> word[0:5:1]     #[start:end:step] format
+'super'
+>>> word[0:5:2]     #2 step
+'spr'               #the output is 0,2,4
+>>> word[5:9:1]     #the start is 5 
+'cali'
+>>> word[5:]        #the start is 5 all the way to the end
+'califragilisticexpialidocious'
+>>> word[5::2]      #start 5, step 2
+'clfaiitcxildcos'
+>>> word[:7]        #from start to the desired end[7]
+'superca'
+>>> word[:8]
+'supercal'
+>>> word[::-1]      #this is used to invert word
+'suoicodilaipxecitsiligarfilacrepus'
