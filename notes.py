@@ -272,5 +272,9 @@ True
 >>> y = "0000000000000happybirthday00000000000000"
 >>> y.strip("0")            #this is used to strip out the "0" in the string
 "happybirthday"
-
-
+>>> y.lstrip("0")           #strips only the left side
+"happybirthday00000000000000"
+>>> y.rstrip("0")           #strips only the right side
+"0000000000000happybirthday"
+>>> y.strip()               #if you use strip without input, it will only strip the spaces
+"happybirthday"
