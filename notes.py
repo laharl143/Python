@@ -226,3 +226,38 @@ TypeError: Can't convert 'int' object to str implicitly
 '1 - part'
 
 
+#String methods:
+>>> string.method()
+
+>>> text = "happy birthday"
+>>> text.count("a")    #this counts how many letter "a" in the string
+2
+
+>>> text.count("day")
+1
+
+>>> x = "Happy Birthday"
+>>> x.lower()           #this makes the string all lower case
+"happy birthday"
+>>> x.lower()           #this makes the string all upper case
+"HAPPY BIRTHDAY"
+>>> x                   #if you call again the string, it will go back to its original
+"Happy Birthday"
+
+>>> x = x.lower()       #this registers the x to lower case
+"happy birthday"
+>>> x                   #if you call x, its now in lower care
+"happy birthday"
+>>> x.capitalize()      #capitalize method() is used to capitalize the first letter of the sentence
+"Happy birthday"
+>>> x.title()           #title method() is used to capitalize the first letter of each word in a sentence
+"Happy Birthday"
+
+>>> x.islower()         # .is<method>() is used to check the current case the x is
+False
+>>> x.isupper()  
+False
+>>> x.istitle()         #here its True, so the x is currently a title case
+True
+
+
