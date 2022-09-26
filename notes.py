@@ -7,7 +7,7 @@ from sqlite3 import OperationalError
 from tkinter import BOTH
 
 
-Open IDLE 
+Open IDLE
 
 Open new File
 
@@ -44,41 +44,41 @@ f. My Description uses full sentences with correct grammar and punctuation ☐
 3) I have included other relevant information
 a. Error messages in full ☐
 b. Version of python used ☐
-c. Screen shots where necessary ☐ 
+c. Screen shots where necessary ☐
 
 
 
 How to ask Question in a Community Example:
-    
-Title: 
-    
-    [Help] Answer not being shown on screen when running Python script 
 
-Description: 
-    
-    1) Observed Behaviour - 
+Title:
+
+    [Help] Answer not being shown on screen when running Python script
+
+Description:
+
+    1) Observed Behaviour -
     Script runs successfully but answer doesnt show up
-    
-    2) Expected Behaviour - 
+
+    2) Expected Behaviour -
     I expected the answer 2 to show up when I ran the script.
-    
-    3) Link to Code: #(Use gist.github) - 
+
+    3) Link to Code: #(Use gist.github) -
     https://gist.github.com/laharl143/2b3072c1ebc8245a182800355fcc3955
-    
+
     4) Where I think the problem is-
     There must be something different between script and the shell
     It worked in the shell...lines 1-2 hold the issue
     Is something missing?
-    
+
     5) What I have tried -
     I tried running the script with different numbers. No difference.
-    
-    6) Errors and Warnings 
+
+    6) Errors and Warnings
     None
-    
+
     7) Version info
     3.5.2
-    
+
     8) Screenshots
     N/A
 
@@ -90,27 +90,27 @@ Description:
 
 
 Type Function:  #this is used to know the type of any variable
-    
+
 >>> type(number)
 <class 'int'>
 
 
 
 HOW TO NAME VARIABLES:
-    
+
 -lower case
 -separate with underscore(_)
 
 example:
     first_number   (good example)
     second_number  (good example)
-    
+
     FirstNumber    (bad example) #camel case is used in javascript
-    
-    
+
+
 
 2 DIFFERENT TYPE OF NUMBERS IN PYTHON:
-    
+
 >>> type(2)
 <class 'int'>  #integer
 
@@ -119,17 +119,17 @@ example:
 
 
 rare type:
-    
+
 >>> 5 % 3   #modulo gives the remainder
 2
 
->>> 10 % 2   
+>>> 10 % 2
 0
 
 
 
 ORDERING OPERATIONS:
-    
+
 B Brackets
 O Order     #^ ,square root, etc
 D Division
@@ -142,7 +142,7 @@ S Subtraction
 
 
 Writing Variables:
-    
+
 !!!It's Important to right variables in python with no spaces.!!!
 
 
@@ -179,7 +179,7 @@ Math Module:   (import math)
 1.5707963267948966
 
 >>>math.hypot(3,4) #get hypotenuse with (a,b)
-5.0 
+5.0
 
 >>>math.pow(2,3)  #2 to the power of 3
 8.0
@@ -226,7 +226,7 @@ TypeError: Can't convert 'int' object to str implicitly
 '1 - part'
 
 
-#String methods:    #important note: strings are immutable; 
+#String methods:    #important note: strings are immutable;
 >>> string.method()
 
 # .count()
@@ -255,10 +255,10 @@ TypeError: Can't convert 'int' object to str implicitly
 >>> x.title()           #title method() is used to capitalize the first letter of each word in a sentence
 "Happy Birthday"
 
-# .islower(), .isupper(), x.istitle() 
+# .islower(), .isupper(), x.istitle()
 >>> x.islower()         # .is<method>() is used to check the current case the x is
 False
->>> x.isupper()  
+>>> x.isupper()
 False
 >>> x.istitle()         #here its True, so the x is currently a title case
 True
@@ -266,7 +266,7 @@ True
 # .index(), .find(), .strip()
 >>> x = "happy birthday"
 >>> x.index("birthday")     #this counts the first letter of "birthday"; 0=H, 1=A, 2=P, 3=P, 4=Y, 5=*space* 6=Birthday
-6 
+6
 >>> x.find("birthday")
 6
 >>> y = "0000000000000happybirthday00000000000000"
@@ -282,7 +282,7 @@ True
 
 #Slice
 
->>> word = "supercalifragilisticexpialidocious" 
+>>> word = "supercalifragilisticexpialidocious"
 >>> word[0]     #count start at 0
 's'
 >>> word[2]
@@ -291,7 +291,7 @@ True
 'super'
 >>> word[0:5:2]     #2 step
 'spr'               #the output is 0,2,4
->>> word[5:9:1]     #the start is 5 
+>>> word[5:9:1]     #the start is 5
 'cali'
 >>> word[5:]        #the start is 5 all the way to the end
 'califragilisticexpialidocious'
@@ -303,3 +303,23 @@ True
 'supercal'
 >>> word[::-1]      #this is used to invert word
 'suoicodilaipxecitsiligarfilacrepus'
+
+>>> word = "supercalifragilisticexpialidocious"
+>>> word[-1]        #used to count from the last letter of word. !!note the last is -1 not -0
+'s'
+>>> word[-5]
+'c'
+>>> word[-2]
+'u'
+>>> word.index("cali")      #used to know the number of the first letter of input
+'5'
+>>> word.index("fragi")
+'9'
+>>> word[word.index("cali"):word.index("fragi")]    #used to get the word from first:second
+'cali'
+>>> word[word.index("docious")]     #used to get the word from first:second
+'docious'
+>>> word[word.index("fragilistic"):word.index("exp")]   #used to get the word from first:second
+'fragilistic'
+>>> word[word.index("fragilistic"):word.index("e")]    #there is an error here since the second input is only "e"
+''
