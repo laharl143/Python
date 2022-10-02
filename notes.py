@@ -328,6 +328,29 @@ True
 
 ################################################################
 Boolean
+if
+elif
+else
+
+
+################################################################
+Logical Operators
+
+>>> not True
+False
+>>> not False
+True
+>>> not 2 < 3
+False
+>>> not 3 > 1
+False
+>>> not 4 == 3
+True
+>>> not True
+False
+>>> not True
+False
+
 
 
 
