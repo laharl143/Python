@@ -18,7 +18,7 @@ F5 to run and it will open in IDLE
 
 
 
-
+################################################################
 #The secrets of a Top Programmers:
 How to ask great questions
 
@@ -47,7 +47,7 @@ b. Version of python used ☐
 c. Screen shots where necessary ☐
 
 
-
+################################################################
 How to ask Question in a Community Example:
 
 Title:
@@ -83,8 +83,8 @@ Description:
     N/A
 
 
-
-###################Variables:
+################################################################
+Variables:
 
 >>> number = 1  #this is used to store value to variable
 
@@ -95,7 +95,7 @@ Type Function:  #this is used to know the type of any variable
 <class 'int'>
 
 
-
+################################################################
 HOW TO NAME VARIABLES:
 
 -lower case
@@ -108,7 +108,7 @@ example:
     FirstNumber    (bad example) #camel case is used in javascript
 
 
-
+################################################################
 2 DIFFERENT TYPE OF NUMBERS IN PYTHON:
 
 >>> type(2)
@@ -127,7 +127,7 @@ rare type:
 0
 
 
-
+################################################################
 ORDERING OPERATIONS:
 
 B Brackets
@@ -143,12 +143,12 @@ S Subtraction
 
 Writing Variables:
 
-!!!It's Important to right variables in python with no spaces.!!!
+!!!It's Important to write variables in python with no spaces.!!!
 
 
 
 
-
+################################################################
 Math Module:   (import math)
 
 >>>round(2.1)
@@ -194,7 +194,7 @@ Math Module:   (import math)
 >>>math.log10(1000)  #10^3 = 1000 ; logarithmic
 3
 
-
+################################################################
 ##Adding or multiplying strings
 
 >>> A = "part one"
@@ -207,7 +207,7 @@ Math Module:   (import math)
 >>> "=" * 20
 "===================="
 
-
+################################################################
 ##Adding string and integer
 
 >>> A = "part"
@@ -219,6 +219,7 @@ TypeError: Can't convert 'int' object to str implicitly
 >>> A + str(B)   #you need to convert the int to str first
 'part1'
 
+################################################################
 ##Python format function
 >>>"{} - {}".format(A,B)   #this is used to put variables to a placeholder
 'part - 1'
@@ -236,7 +237,7 @@ TypeError: Can't convert 'int' object to str implicitly
 
 >>> text.count("day")
 1
-
+################################################################
 # .lower(), .upper(), .capitalize(), .title()
 >>> x = "Happy Birthday"
 >>> x.lower()           #this makes the string all lower case
@@ -263,6 +264,7 @@ False
 >>> x.istitle()         #here its True, so the x is currently a title case
 True
 
+################################################################
 # .index(), .find(), .strip()
 >>> x = "happy birthday"
 >>> x.index("birthday")     #this counts the first letter of "birthday"; 0=H, 1=A, 2=P, 3=P, 4=Y, 5=*space* 6=Birthday
@@ -279,7 +281,7 @@ True
 >>> y.strip()               #if you use strip without input, it will only strip the spaces
 "happybirthday"
 
-
+################################################################
 #Slice
 
 >>> word = "supercalifragilisticexpialidocious"
@@ -322,4 +324,11 @@ True
 >>> word[word.index("fragilistic"):word.index("exp")]   #used to get the word from first:second
 'fragilistic'
 >>> word[word.index("fragilistic"):word.index("e")]    #there is an error here since the second input is only "e"
-''
+'' 
+
+################################################################
+Boolean
+
+
+
+
