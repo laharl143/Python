@@ -1,3 +1,4 @@
+from distutils.command.build_scripts import first_line_re
 from distutils.log import info
 from doctest import script_from_examples
 import math
@@ -352,7 +353,77 @@ False
 False
 
 ################################################################
-AND | OR 
+Conditional Operators
+
+==  // equal
+!=  //not equal
+<=  //less than or equal
+>=  //greater than or equal
+<   //less than
+>   //greater than
+
+################################################################
+Chained Conditionals
+
+or  //if either is true, the condition is true
+not //its the opposite 
+and //all of the value should be true, for the condition to be true
+
+Order of operation:
+not //first to operate
+and //second to operate
+or //last to operate
+
+x = 1
+y = 2 
+z = 4
+
+result = ((x + y) > z) or ((x + y) < z)
+print(result) #True
+
+result = ((x + y) > z) and ((x + y) < z)
+print(result) #False
+
+result = not((x + y) > z) and ((x + y) < z)
+print(result) #True
+
+################################################################
+If/Else/Elif
+
+
+
+################################################################
+List/Tuples
+################################################################
+For Loops
+################################################################
+While Loops
+################################################################
+Slice Operators
+################################################################
+Sets
+################################################################
+Dicts
+################################################################
+Comprehensions
+################################################################
+Functions
+################################################################
+args & kwargs
+################################################################
+Scope & Globals
+################################################################
+Exceptions
+################################################################
+Handling Exceptions
+################################################################
+Lambda
+################################################################
+Map & Filter
+################################################################
+F Strings
+################################################################
+
 
 
 
