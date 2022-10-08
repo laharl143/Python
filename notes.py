@@ -454,10 +454,30 @@ print(x[0])     # error ; tuple is immutable!
 x = (0,0,2,2)
 x.append(3)
 print(x[0])     # error ; tuple is immutable!
+
 ################################################################
-For Loops
+For Loops:   #(start,stop,step)
 
+for i in range(5):     #(start)
+    print(i)  #0
+              #1
+              #2
+              #3
+              #4
 
+for i in range(1,5):     #(start,stop)
+    print(i)  #1
+              #2
+              #3
+              #4
+              #5
+
+for i in range(1,5,2):     #(start,stop,step)
+    print(i)  #1
+              #3
+              #5
+              #7
+              #9
 ################################################################
 While Loops
 ################################################################
