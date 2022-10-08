@@ -541,8 +541,37 @@ print(sliced)  #[8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 sliced = s[::-1]    #[::step]    #this is used to print the list in backwards
 print(sliced)  #olleh
+
 ################################################################
-Sets
+Sets    #is a collection which is unordered, unchangeable*, and unindexed.
+
+s = {4,32,2,2}   #this is called a set literal
+print(s)    #{32, 2, 4}     # the duplicate 2 were removed
+
+s = {4,32,2,2}   
+s.add(5)
+print(s)    #{32, 2, 4, 5}
+
+s = {4,32,2,2}   
+s.remove(2)
+print(s)    #{32, 4}
+
+s = {4,32,2,2}   
+print(4 in s)    #True
+
+s = {4,32,2,2}   
+print(33 in s)    #False
+
+s = {4,32,2,2}  
+s2 = {3,4,22,1}  
+print(s.union(s2))  #{32, 1, 2, 3, 4, 22}
+
+s = {4,32,2,2}  
+s2 = {3,4,22,1}  
+print(s.difference(s2))   #{32, 2}  #it removes the elements that are common
+
+
+
 ################################################################
 Dicts
 ################################################################
