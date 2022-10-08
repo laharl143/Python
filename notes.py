@@ -7,6 +7,8 @@ from re import A, X
 from sqlite3 import OperationalError
 from tkinter import BOTH
 
+from parser import tuple2st
+
 
 Open IDLE
 
@@ -390,12 +392,72 @@ print(result) #True
 ################################################################
 If/Else/Elif
 
+x = input('Name: ')
 
+if x == 'Tim':
+    print('You are great!')
+elif x == 'Joe':
+    print('Hello Joe')
+elif x == 'Jhanna':
+    print('Hi langga!')
+else:
+    print('No')
 
 ################################################################
 List/Tuples
+
+List
+-list use a [] square brackets
+-is an ordered collection
+-list is mutable; it means it is changeable
+
+Tuple 
+-tuples use a () round brackets
+-cannot move and cannot change elements
+-tuple is an immutable list
+
+List:
+x = [4, True, 'hi']   #list
+print(len(x))  #3
+
+x = [4, True, 'hi']   
+x.append('hello')  #append adds a single data to the end of the list
+print(x)  #[4, True, 'hi', 'hello'] 
+
+x = [4, True, 'hi']   
+x.extend([4,5,5,5,5])  #extend adds lists to a list
+print(x)  #[4, True, 'hi', 4,5,5,5,5] 
+
+x = [4, True, 'hi']   
+print(x.pop())  #'hi'       #pop removes the last data in the list
+print(x)        # [4, True]
+
+x = [4, True, 'hi']   
+print(x.pop(0))  #'4       #you can put an argument inside pop and it will remove that element
+print(x)        # [True, 'hi']
+
+x = [4, True, 'hi']   
+print(x[1])     #True     # this is used access an element inside a list
+
+x = [4, True, 'hi']   
+x[0] = 'hello'  # this is used to change an element inside a list
+print(x)     #['hello', True, 'hi']
+
+Tuples:
+x = (0,0,2,2)
+print(x[0])     # 0
+
+x = (0,0,2,2)
+x[0] = 5
+print(x[0])     # error ; tuple is immutable!
+
+x = (0,0,2,2)
+x.append(3)
+print(x[0])     # error ; tuple is immutable!
 ################################################################
 For Loops
+
+
 ################################################################
 While Loops
 ################################################################
