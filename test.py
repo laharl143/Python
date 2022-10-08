@@ -1,2 +1,2 @@
-x = lambda x, y: x + y
-print(x(2, 32)) #34
+tim = 89
+print(f'hello {tim}')

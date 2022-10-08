@@ -754,11 +754,23 @@ print(x(2, 32)) #34
 ################################################################
 Map & Filter    #they each take a function and a list of elements, and then return the result of applying the function to each element in the list.
 
+x = [1,2,4,5,3,3,21,2,21,2,313,1,23,142,4]
+mp = map(lambda i: i + 2, x)    #using map, 2 is added to every element in the list  
+print(list(mp))     #[3, 4, 6, 7, 5, 5, 23, 4, 23, 4, 315, 3, 25, 144, 6]
 
+x = [1,2,4,5,3,3,21,2,21,2,313,1,23,142,4]
+mp = map(lambda i: i * 2, x)    #using map, multiplied by 2 to every element in the list
+print(list(mp))     #[2, 4, 8, 10, 6, 6, 42, 4, 42, 4, 626, 2, 46, 284, 8]
+
+x = [1,2,4,5,3,3,21,2,21,2,313,1,23,142,4]
+mp = filter(lambda i: i % 2 == 0, x)    #using filter, the list is filtered with the condition of it being divisible by two or being even number
+print(list(mp))     #[2, 4, 2, 2, 142, 4]
 
 ################################################################
 F Strings
 
+tim = 89
+print(f'hello {tim}')   #hello 89
 ################################################################
 
 
