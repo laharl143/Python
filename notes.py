@@ -570,10 +570,15 @@ s = {4,32,2,2}
 s2 = {3,4,22,1}  
 print(s.difference(s2))   #{32, 2}  #it removes the elements that are common
 
-
+s = {4,32,2,2}  
+s2 = {3,4,22,1}  
+print(s.intersection(s2)) #{4}
 
 ################################################################
-Dicts
+Dictionaries    #Dictionaries are used to store data values in key:value pairs.
+
+
+
 ################################################################
 Comprehensions
 ################################################################
