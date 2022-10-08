@@ -443,7 +443,7 @@ x = [4, True, 'hi']
 x[0] = 'hello'  # this is used to change an element inside a list
 print(x)     #['hello', True, 'hi']
 
-Tuples:
+Tuple:
 x = (0,0,2,2)
 print(x[0])     # 0
 
@@ -615,15 +615,89 @@ for key, value in x.items():
     print(key, value)   #key 4
 
 ################################################################
-Comprehensions
+Comprehensions  #provide us with a short and concise way to construct new sequences (such as lists, set, dictionary etc.)
 
+x = [x for x in range(5)]
+print(x)    #[0, 1, 2, 3, 4]
+
+x = [x + 5 for x in range(5)]
+print(x)    #[5, 6, 7, 8, 9]
+
+x = [0 for x in range(5)]
+print(x)    #[0, 0, 0, 0, 0]
+
+x = [0 for x in range(30) for x in range(5)]
+print(x)    #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+x = [i for i in range(100) if i % 5 == 0]    #modulus is used in divisibility   #this is the multiples of 5 up to 100 but not including 100
+print(x)    #[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
+
+x = {i for i in range(100) if i % 5 == 0}    #can also be used in sets
+print(x)    #{0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95}
+
+x = {0:i for i in range(100) if i % 5 == 0}    #can also be used in a dictionary
+print(x)    #{0: 0, 5: 0, 10: 0, 15: 0, 20: 0, 25: 0, 30: 0, 35: 0, 40: 0, 45: 0, 50: 0, 55: 0, 60: 0, 65: 0, 70: 0, 75: 0, 80: 0, 85: 0, 90: 0, 95: 0}
 
 ################################################################
-Functions
+Functions   #function is a block of code which only runs when it is called
 
+def func():
+    print('Run')
+func()  #Run
 
+def func(x, y):     #(parameter, parameter)
+    print('Run', x, y)
+func(5, 6)  #Run 5 6      #(argument, argument)
+
+def func(x, y):     
+    print('Run', x, y)
+    return x * y
+print(func(5, 6))   #Run 5 6  
+                    #30
+
+def func(x, y):     
+    print('Run', x, y)
+    return x * y, x / y
+print(func(5, 6))   #Run 5 6
+                    #(30, 0.8333333333333334)
+
+def func(x, y):     
+    print('Run', x, y)
+    return x * y, x / y
+r1, r2 = func(5, 6)
+print(r1, r2)   #Run 5 6
+                #30 0.8333333333333334               
+                #     
 ################################################################
-args & kwargs
+*Args & **Kwargs
+#   *args passes variable number of non-keyworded arguments and on which operation of the tuple can be performed
+#   **kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed.
+
+def func (*args, **kwargs):
+    pass
+x = [1, 23, 236363, 2727]
+print(*x)   #1 23 236363 2727
+
+def func (*args, **kwargs):
+    pass
+x = [1, 23, 236363, 2727]
+print(x)
+print(*x)   #[1, 23, 236363, 2727]
+            #1 23 236363 2727
+
+def func(x, y):
+    print(x, y)
+pairs = [(1,2), (3,4)]
+for pair in pairs:
+    func(*pair) #1 2                    #single asterisk is used for a tuple or list
+                #3 4
+
+def func(x, y):
+    print(x, y)
+pairs = [(1,2), (3,4)]
+for pair in pairs:
+    func(**{'x': 2, 'y':5}) #2 5        #double asterisk is used for dictionaries
+                            #2 5
 
 
 ################################################################
