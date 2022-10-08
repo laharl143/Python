@@ -670,8 +670,8 @@ print(r1, r2)   #Run 5 6
                 #     
 ################################################################
 *Args & **Kwargs
-#   *args passes variable number of non-keyworded arguments and on which operation of the tuple can be performed
-#   **kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed.
+#   *args passes variable number of non-keyworded arguments and on which operation of the tuple can be performed                       #args = arguments
+#   **kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed.   #kwargs = keyword arguments
 
 def func (*args, **kwargs):
     pass
@@ -699,14 +699,32 @@ for pair in pairs:
     func(**{'x': 2, 'y':5}) #2 5        #double asterisk is used for dictionaries
                             #2 5
 
-
+def func (*args, **kwargs):
+    print(args, kwargs)
+func(1,2,3,4,5,one=0, two=1)    #(1, 2, 3, 4, 5) {'one': 0, 'two': 1}
 ################################################################
 Scope & Globals
 
+x = 'tim'
+def func(name):
+    x = name
+print(x)
+func('changed')
+print(x)    #tim        
+            #tim
 
+x = 'tim'
+def func(name):
+    global x           #you can add this global keyword
+    x = name
+print(x)
+func('changed')
+print(x)    #tim        
+            #changed
 ################################################################
 Exceptions
 
+raise Exception('Bad')
 ################################################################
 Handling Exceptions
 
