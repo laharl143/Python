@@ -458,7 +458,7 @@ print(x[0])     # error ; tuple is immutable!
 ################################################################
 For Loops:   #(start,stop,step)
 
-for i in range(5):     #(start)
+for i in range(5):     #(stop)   #default start is 0
     print(i)  #0
               #1
               #2
@@ -472,16 +472,75 @@ for i in range(1,5):     #(start,stop)
               #4
               #5
 
-for i in range(1,5,2):     #(start,stop,step)
+for i in range(1,5,2):     #(start,stop,step)   #step is increment    #you can put a negative number in step
     print(i)  #1
               #3
               #5
               #7
               #9
+
+for i in range(5,-1,-1):     #(start,stop,step)   #you can put a negative number in step
+    print(i)  #5
+              #4
+              #3
+              #2
+              #1
+              #0
+
+for i in [3,4,42,3,69]:    #you can also use for loop in list
+    print(i)  #3
+              #4
+              #42
+              #3
+              #69
+
+x = [3,4,42,3,69]
+for i, element in enumerate(x):    #you can also use for loop in list
+    print(i,element)  #0  3
+                      #1  4
+                      #2  42
+                      #3  3
+                      #4  69
+            
 ################################################################
 While Loops
+
+i = 0
+while i < 5:
+    print('run')
+    i += 1  #run
+            #run
+            #run 
+            #run
+            #run 
+
 ################################################################
-Slice Operators
+Slice Operators   #[start:stop:step]
+
+x = [0,1,2,3,4,5,6,7,8]
+y = ['hi', 'hello', 'goodbye', 'cya', 'sure']
+s = "hello"
+
+sliced = x[0:4:2]       #[start:stop:step]
+print(sliced)  #[0, 2]   #start from 0, stop at 4, increment by 2   #important note! the argument in stop is not included in the printed slice
+
+sliced = x[0:5:2]
+print(sliced)  #[0, 2, 4]   #start from 0, stop at 5, increment by 2
+
+sliced = x[:5]   #[:stop]
+print(sliced)  #[0, 1, 2, 3, 4]
+
+sliced = x[2:]   #[start:]
+print(sliced)  #[2, 3, 4, 5, 6, 7, 8]
+
+sliced = x[4:2:-1]    #[start:stop:step]
+print(sliced)  #[4, 3]
+
+sliced = x[::-1]    #[::step]    #this is used to print the list in backwards
+print(sliced)  #[8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+sliced = s[::-1]    #[::step]    #this is used to print the list in backwards
+print(sliced)  #olleh
 ################################################################
 Sets
 ################################################################
