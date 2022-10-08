@@ -721,18 +721,40 @@ print(x)
 func('changed')
 print(x)    #tim        
             #changed
+
 ################################################################
 Exceptions
 
 raise Exception('Bad')
+
 ################################################################
 Handling Exceptions
 
-################################################################
-Lambda
+try:
+    x = 7 / 0
+except Exception as e:
+    print(e)    #division by zero
+
+try:
+    x = 7 / 0
+except Exception as e:
+    print(e)    #division by zero
+finally:
+    print('finally')    #finally
 
 ################################################################
-Map & Filter
+Lambda  #A lambda function is a small anonymous function. A lambda function can take any number of arguments, but can only have one expression.
+
+x = lambda x: x + 5
+print(x(2)) #7
+
+x = lambda x, y: x + y
+print(x(2, 32)) #34
+
+################################################################
+Map & Filter    #they each take a function and a list of elements, and then return the result of applying the function to each element in the list.
+
+
 
 ################################################################
 F Strings

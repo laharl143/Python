@@ -1,1 +1,2 @@
-raise Exception('Bad')
+x = lambda x, y: x + y
+print(x(2, 32)) #34
