@@ -2,8 +2,9 @@
 
 # Expected output: 0.5403023058681397  
 
+# import math
+# print(math.cosine(1))
+
+
 import math
-print(math.cosine(1))
-
-
-
+print(math.cos(1))  #0.5403023058681397  #cosine -> cos
