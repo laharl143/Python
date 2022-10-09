@@ -401,7 +401,7 @@ elif x == 'Joe':
 elif x == 'Jhanna':
     print('Hi langga!')
 else:
-    print('No')
+    print('No')[]
 
 ################################################################
 List/Tuples
@@ -454,6 +454,14 @@ print(x[0])     # error ; tuple is immutable!
 x = (0,0,2,2)
 x.append(3)
 print(x[0])     # error ; tuple is immutable!
+
+################################################################
+Range:
+
+d = list(range(1, 11))  #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+d = {"a":list(range(1, 11))}    #{'a': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
 
 ################################################################
 For Loops:   #(start,stop,step)

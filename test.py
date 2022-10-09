@@ -1,2 +1,2 @@
-tim = 89
-print(f'hello {tim}')
+mylist = list('abcdefghijklmnopqrstuvwxyz')
+print(*mylist, sep='\n') 
