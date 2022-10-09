@@ -617,6 +617,12 @@ x = {'key': 4}
 for key, value in x.items():
     print(key, value)   #key 4
 
+d = {"a": 1, "b": 2, "c": 3}
+print(sum(d.values()))  #6 
+
+d = {"a": 1, "b": 2, "c": 3}
+d = dict((key, value) for key, value in d.items() if value <= 1)    #remove all items with a value of greater than 1
+print(d)    #{'a': 1}
 ################################################################
 Comprehensions  #provide us with a short and concise way to construct new sequences (such as lists, set, dictionary etc.)
 
